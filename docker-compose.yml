@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    dockprox:
+        container_name: dockprox
+        build: ./
+        ports:
+          - 3801:3800
+        restart: unless-stopped
+        volumes:
+            - /var/run/docker.sock:/tmp/docker.sock
