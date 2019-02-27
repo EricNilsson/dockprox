@@ -1,0 +1,4 @@
+- Bind doker docket to container
+- Let webserver catch all requests
+- Foward the request path to docker socket
+- Sanitize the reaponse before it is sent back
